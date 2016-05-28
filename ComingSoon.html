@@ -64,8 +64,12 @@
           <?php
 
             $f = fopen("subscribers.txt", "w");
-            frwite($f, $_POST("name" + ", phone" + ", email"));
+            frwite($f, $_POST("name" + " phone" + " email"));
             $fclose($f);
+
+            $f = fopen("subscribers.txt", "r");
+            echo fgets($f);
+            fclose($f);
 
           ?>
 
