@@ -33,28 +33,28 @@
           <div class="thumbnail content-white">
             <div class="caption">
               <h4>Be notified when the website is up and running!</h4>
-              <form class="form-horizontal">
+              <form class="form-horizontal" action="mailto:leric90@gmail.com" method="GET">
                 <div class="control-group">
                   <label class="control-label" for="name">Name</label>
                   <div class="controls">
-                    <input type="text" id="name" placeholder="Full Name">
+                    <input type="text" id="name" placeholder="Full Name" name="subject">
                   </div>
                 </div>
                 <div class="control-group">
                   <label class="control-label" for="phone">Phone</label>
                   <div class="controls">
-                    <input type="text" id="phone" placeholder="Phone">
+                    <input type="text" id="phone" placeholder="Phone #" name="body">
                   </div>
                 </div>
                 <div class="control-group">
                   <label class="control-label" for="subject">Email</label>
                   <div class="controls">
-                    <input type="text" id="subject" placeholder="Subject">
+                    <input type="text" id="subject" placeholder="Subject" name="body">
                   </div>
                 </div>
                 <div class="control-group">
                   <div class="controls">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" value="Send">Submit</button>
                   </div>
                 </div>
               </form>
@@ -66,7 +66,6 @@
           <p>Pro Hockey Inventory</p>
         </div>
 
-      </div>
-
+    </div>
   </body>
 </html>
