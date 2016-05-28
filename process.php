@@ -1,6 +1,6 @@
 <?php
    
-   $myFile = "subscribers.json";
+   $myFile = "http://prohockeyinventory.com/subscribers.json";
    $arr_data = array(); // create empty array
 
   try
