@@ -33,45 +33,27 @@
           <div class="thumbnail content-white">
             <div class="caption">
               <h4>Be notified when the website is up and running!</h4>
-              <form class="form-horizontal">
+              <form class="form-horizontal" id="signup" action="process.php" method="POST">
                 <div class="control-group">
                   <label class="control-label" for="name">Name</label>
                   <div class="controls">
-                    <input type="text" id="name" placeholder="Full Name">
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="phone">Phone</label>
-                  <div class="controls">
-                    <input type="text" id="phone" placeholder="Phone #">
+                    <input type="text" id="name" placeholder="Full Name" name="name">
                   </div>
                 </div>
                 <div class="control-group">
                   <label class="control-label" for="subject">Email</label>
                   <div class="controls">
-                    <input type="text" id="subject" placeholder="Subject">
+                    <input type="text" id="email" placeholder="Email" name="email">
                   </div>
                 </div>
                 <div class="control-group">
                   <div class="controls">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <input type="submit" value="Notify Me">
                   </div>
                 </div>
               </form>
             </div>
           </div>
-
-          <?php
-
-            $f = fopen("subscribers.txt", "w");
-            frwite($f, $_POST("name" + " phone" + " email"));
-            $fclose($f);
-
-            $f = fopen("subscribers.txt", "r");
-            echo fgets($f);
-            fclose($f);
-
-          ?>
 
         <hr>
         <div class="footer">
