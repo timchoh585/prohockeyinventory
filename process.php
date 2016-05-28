@@ -1,6 +1,6 @@
 <?php
    
-   $myFile = "http://prohockeyinventory.com/subscribers.json";
+   $myFile = "https://docs.google.com/document/d/1PB8hKPecbM95I4qVoufBREPdBh8LS9NIUhQHQsqMs-c/edit?usp=sharing";
    $arr_data = array(); // create empty array
 
   try
