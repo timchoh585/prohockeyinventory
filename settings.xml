@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings
+
+nameText="Eric Lee"
+taglineText="Founder and Creator of Pro Hockey Inventory"
+mainText="NEW SITE COMING SOON"
+
+useOwnLogo="false"
+logoFilePath="logo.png"
+
+nameColor="0xffffff"
+taglineColor="0xffffff"
+mainColor="0xffffff"
+linkColor="0xffffff"
+linkRollOverColor="0xff4400"
+linkRollOverBlurAmount="5"
+
+backgroundColor="0x000000"
+backgroundGradientColor1="0xff4400"
+backgroundGradientColor2="0x000000"
+backgroundGradientAlphaPercent="40"
+
+borderColor="0xffffff"
+borderThickness="10"
+
+ownLogoXOffset="3"
+taglineXOffset="2"
+taglineYOffset="-9"
+mainXOffset="-2"
+linkXOffset="2"
+
+introBlurAmount="20"
+siteRotation="0"
+
+>
+
+<link text="LERIC90@GMAIL.COM" url="mailto:leric90@gmail.com" />
+<link text="CHECK OUT CURRENT STOCK" url="https://docs.google.com/spreadsheets/d/1Ie0iCHMf_nllefqyq7LimgOzwKwENncc5_rKTuTCGys/edit?ts=5744cf40#gid=0" target="_blank" />
+<link text="EMAIL ME IF YOU WANT TO REQUEST A STICK" url="mailto:leric90@gmail.com" target="_blank" />
+
+</settings>

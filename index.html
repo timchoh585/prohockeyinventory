@@ -1,125 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Pro Hockey Inventory</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<title>Pro Hockey Inventory</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
 
-    <!-- Le styles -->
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript">
+	var flashvars = {};
+	var params = {
+		menu: "true",
+		quality: "high",
+		scale: "noscale",
+		salign: "tl",
+		wmode: "window",
+		bgcolor: "#ffffff",
+		allowscriptaccess: "always"
+	};
+	var attributes = {id:"flashcontent"};
+	swfobject.embedSWF("sapling.swf", "flashcontent", "100%", "100%", "9", false, flashvars, params, attributes);
+</script>
 
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-    <link href="css/style.css" rel="stylesheet">
+<!-- Begin iPhone/iPad detection code -->
+<script type="text/javascript">
+	if ((navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1) || (navigator.userAgent.indexOf('iPad') != -1)) {
+		document.location = "mobile/";
+	}
+</script>
+<!-- End iPhone/iPad detection code -->
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
-    <![endif]-->
-  </head>
+<style type="text/css">
 
-  <body>
+html {
+	height: 100%;
+	overflow: hidden;
+}
 
-    <div class="container">
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f9ed;
+	font-family: Arial, sans-serif;
+	color: #333333;
+}
 
-      <div class="masthead">
-        <h3 class="muted">PHI</h3>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <ul class="nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                
-                <li><a href="checkout.html">Checkout <span class="badge badge-important">3</span></a></li>
-                <li><a href="new.html">Order Placement</a></li>
-                <li><a href="status.html">Order Status</a></li>
+a, a:visited, a:link {
+	color: #07c2a8;
+	text-decoration: underline;
+}
 
-                <li class="dropdown">
-				  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-				    Categories
-				    <b class="caret"></b>
-				  </a>
-				  <ul class="dropdown-menu">
-				    <li class="nav-header">Men</li>
-				    <li><a href="list.html">Sticks</a></li>
-				    <li><a href="list.html">More Sticks</a></li>
-				    <li><a href="list.html">More Sticks</a></li>
-				    <li><a href="list.html">Even More Sticks</a></li>
-				  </ul>
-				</li>
+a:active, a:hover {
+	text-decoration: none;
+}
 
-                <li class="dropdown">
-				  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-				    Pages
-				    <span class="caret"></span>
-				  </a>
-				  <ul class="dropdown-menu">
-				    <li><a href="aboutus.html">About Us</a></li>
-				    <li><a href="contactus.html">Contact Us</a></li>
-				  </ul>
-				</li>
+#flashcontent {
+	width: 100%;
+	height: 100%;
+}
 
-              </ul>
-            </div>
-          </div>
-        </div><!-- /.navbar -->
-      </div>
+#noflash {
+	width: 320px;
+	margin: 0;
+	padding: 0;
+}
 
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>Latest News</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <a class="btn btn-large btn-success" href="list.html">Show Products</a>
-      </div>
+h1 {
+	font-size: 30px;
+	letter-spacing: -2px;
+	margin-bottom: -10px;
+}
 
-      <hr>
+h2 {
+	font-size: 12px;
+}
 
-      <!-- Example row of columns -->
-      <div class="row-fluid">
-        <ul class="thumbnails">
-          <li class="span4">
-            <div class="thumbnail">
-              <img alt="300x200" src="http://placehold.it/300x200">
-              <div class="caption">
-                <h3>Product A</h3>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a href="checkout.html" class="btn btn-primary">Add To Cart</a> <a href="view.html" class="btn">View</a></p>
-              </div>
-            </div>
-          </li>
-          <li class="span4">
-            <div class="thumbnail">
-              <img alt="300x200" src="http://placehold.it/300x200">
-              <div class="caption">
-                <h3>Product B</h3>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a href="checkout.html" class="btn btn-primary">Add To Cart</a> <a href="view.html" class="btn">View</a></p>
-              </div>
-            </div>
-          </li>
-          <li class="span4">
-            <div class="thumbnail">
-              <img alt="300x200" src="http://placehold.it/300x200">
-              <div class="caption">
-                <h3>Product C</h3>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a href="checkout.html" class="btn btn-primary">Add To Cart</a> <a href="view.html" class="btn">View</a></p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+p {
+	font-size: 12px;
+}
 
-      <hr>
+#footer p {
+	font-size: 11px;
+}
 
-      <div class="footer">
-        <p>Pro Hockey Inventory</p>
-      </div>
+#content, #footer {
+	padding: 20px;
+}
 
-    </div> <!-- /container -->
+#upgrade {
+	background-color: #ffffff;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px dotted #cccccc;
+}
 
-  </body>
+</style>
+
+</head>
+<body>
+
+<div id="flashcontent">
+	
+	<div id="noflash">
+		
+		<div id="content">
+		
+			<h1>Pro Hockey Inventory</h1>
+			
+			<div id="upgrade">
+			
+				<p><strong>Adobe Flash Player 9 is required to view my site</strong></p>
+				<p><a href="http://www.adobe.com/go/getflashplayer/">&raquo; Download the latest version here</a></p>
+				<p><a href="mobile/">&raquo; Visit a non-Flash version of my website</a></p>
+			
+			</div><!-- / #upgrade -->
+			
+			<p><a href="mailto:leric90@gmail.com">Eric Lee - Founder and Creator of Pro Hockey Inventory</a></p>
+			<p>Email me your stick requests</p>
+			<p>or if you have sticks you want me to sell.</p>
+		
+		</div><!-- / #content -->
+		
+		<div id="footer">
+			
+			<p>&copy; Pro Hockey Inventory</p>
+		
+		</div><!-- / #footer -->
+		
+	</div><!-- / #noflash -->
+	
+</div><!-- / #flashcontent -->
+
+</body>
 </html>
